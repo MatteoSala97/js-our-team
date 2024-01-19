@@ -35,7 +35,6 @@ const member6 = {
     portrait : './assets/img/barbara-ramos-graphic-designer.jpg'
 }
 
-let arrayMembers = [member1, member2, member3, member4,member5, member6]
+const arrayMembers = [member1, member2, member3, member4,member5, member6]
 
 console.log(arrayMembers)
-
