@@ -1,3 +1,4 @@
+/*********** MILESTONES 0 - 1 ***********/
 const member1 = {
     firstName : "Wayne",
     lastName : "Barnett",
@@ -37,4 +38,28 @@ const member6 = {
 
 const arrayMembers = [member1, member2, member3, member4,member5, member6]
 
-console.log(arrayMembers)
+for (i = 0; i < arrayMembers.length; i++){
+    console.log(arrayMembers[i])
+}
+
+/*********** MILESTONE 2 ***********/
+
+const mainElement = document.querySelector('main')
+
+
+for (var i = 0; i < arrayMembers.length; i++) {
+    // takes the members from the array
+    var member = arrayMembers[i]
+
+    // creates a new div element for each member
+    var memberDiv = document.createElement('div')
+    memberDiv.classList.add('member')
+
+    // Create and set the HTML content for each member
+    memberDiv.innerHTML = '<img src="' + member.portrait + '" alt="' + member.firstName + ' ' + member.lastName + '" />' +
+    '<h2>' + member.firstName + ' ' + member.lastName + '</h2>' +
+    '<p>' + member.role + '</p>'
+
+    // appends the memberDiv to the main
+    mainElement.appendChild(memberDiv)
+}
