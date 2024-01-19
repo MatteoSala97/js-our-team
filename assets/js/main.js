@@ -57,7 +57,7 @@ for (let i = 0; i < arrayMembers.length; i++) {
 
     // Create and set the HTML content for each member
     memberDiv.innerHTML = '<img src="' + member.portrait + "" +' "/>' +
-    '<h2>' + member.firstName + "" + member.lastName + '</h2>' +
+    '<h2>' + member.firstName + " " + member.lastName + '</h2>' +
     '<p>' + member.role + '</p>'
 
     // appends the memberDiv to the main
