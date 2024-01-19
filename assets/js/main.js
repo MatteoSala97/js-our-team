@@ -47,17 +47,17 @@ for (i = 0; i < arrayMembers.length; i++){
 const mainElement = document.querySelector('main')
 
 
-for (var i = 0; i < arrayMembers.length; i++) {
+for (let i = 0; i < arrayMembers.length; i++) {
     // takes the members from the array
-    var member = arrayMembers[i]
+    let member = arrayMembers[i]
 
     // creates a new div element for each member
-    var memberDiv = document.createElement('div')
+    let memberDiv = document.createElement('div')
     memberDiv.classList.add('member')
 
     // Create and set the HTML content for each member
-    memberDiv.innerHTML = '<img src="' + member.portrait + '" alt="' + member.firstName + ' ' + member.lastName + '" />' +
-    '<h2>' + member.firstName + ' ' + member.lastName + '</h2>' +
+    memberDiv.innerHTML = '<img src="' + member.portrait + "" +' "/>' +
+    '<h2>' + member.firstName + "" + member.lastName + '</h2>' +
     '<p>' + member.role + '</p>'
 
     // appends the memberDiv to the main
